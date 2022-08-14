@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+    <!--Div container com todos elementos dentro-->
+    <div class="container">
+
+        <!-- Conteudo principal contendo duas divs primarias-->
+        <div class="maincontent">
+            <!--Div com a imagem alinhada a esquerda-->
+            <div class="leftside">
+                <img class="img1" src="assets/img2.jpg" alt="noIMGfound">
+            </div>
+
+            <!--Div com o conteudo da calculadora e pontos extras-->
+            <div class="rightside">
+
+                <!--Menu hamburguer-->
+                <div class="hamburguer">
+                    <div class="menu"></div>
+                    <div class="spangroup">
+                        <input type="checkbox" id="checkbox-menu">
+                        <label for="checkbox-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                    </div>
+                    
+                </div>
+
+                <!--Titulo e descrição do projeto situado a direita-->
+                <h1 class="title">Calculadora de IMC</h1>
+
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis quaerat
+                    excepturi!</p>
+                <!-- box de input, buttons e labels-->
+
+                <label for="height">Altura (cm):</label>
+                <input class="box1" type="number" id="height" placeholder="ex: 178">
+
+                <label for="weight">Peso (kg):</label>
+                <input class="box1" type="number" id="weight" placeholder="ex: 95">
+                <!--Botão para o calculo-->
+                <button id="calculate" onclick="calcIMC()">Calcular</button>
+                <span id="result"></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
