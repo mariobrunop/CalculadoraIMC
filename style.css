@@ -85,8 +85,8 @@ label span:nth-child(3) {
 
 .rightside {
     width: 50%;
-    height: 96vw;
-    max-height: 860px;  
+    height:auto;
+    min-height: 790px;
     border: 2px transparent;
     border-radius: 15px;
     display: flex;
